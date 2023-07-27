@@ -1,0 +1,108 @@
+<script>
+    import "../components/java.js"
+</script>
+<header>
+    <h1 id="h2" class="h1">Everything you need to start a website</h1>
+    <p>Astro comes batteries included, it takes the best parts of state-of-the-art tools and adds its own innovations.</p>
+    <section class="grid">
+        <div class="gridone">
+            <icono-box><i class="ri-briefcase-4-fill"></i></icono-box>
+            <div class="flex">
+                <h1>Bring your own framework</h1>
+                <p>Build your site using React, Svelte, Vue, Preact, Web components, orjust plain ol HTML + JavaScript</p>
+            </div>
+        </div>
+        <div class="gridtwo">
+            <icono-box><i class="ri-window-2-line"></i></icono-box>
+            <div class="flex">
+                <h1>100% Static HTML, No JS</h1>
+                <p>Astro renders your entire page to static HTML, removing all JavaScript from your final build by default</p>
+            </div>
+        </div>
+        <div class="gridthree">
+            <icono-box><i class="ri-database-2-fill"></i></icono-box>
+            <div class="flex">
+                <h1>On-Demand Components</h1>
+                <p>Need some JS? Astro can automatically hydrate interactive components when they become visible on the page</p>
+            </div>
+        </div>
+        <div class="gridfour">
+            <icono-box><i class="ri-aliens-line"></i></icono-box>
+            <div class="flex">
+                <h1>Broad integration</h1>
+                <p>Astro supports TypeScript, Scoped CSS, CSS Modules, Sass, Tailwind, Markdown, MDX, and any other npm packages</p>
+            </div>
+        </div>
+        <div class="gridfive">
+            <icono-box><i class="ri-folder-unknow-line"></i></icono-box>
+            <div class="flex">
+                <h1>SEO Enabled</h1>
+                <p>Automatic sitemaps, RSS feeds, pagination and collections take the pain out of SEO and syndication. It just works!</p>
+            </div>
+        </div>
+        <div class="gridsix">
+            <icono-box><i class="ri-user-fill"></i></icono-box>
+            <div class="flex">
+                <h1>Community</h1>
+                <p>Astro is an open source project powered by hundreds of contributors making thousands of individual contributions.</p>
+            </div>
+        </div>
+    </section>
+</header>
+<style>
+    header{
+        display: grid;
+        margin-top: 100px;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 1fr 1fr;
+        margin-top: 50px;
+        gap: 35px;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    .gridone,
+    .gridtwo,
+    .gridthree,
+    .gridfour,
+    .gridfive,
+    .gridsix{
+        display: grid;
+        grid-template-columns: 1fr 7fr;
+        align-content: space-between;
+        gap: 10px;
+    }
+    i{
+        font-size: 1.2em;
+        color: white;
+        background-color: black;
+        width: 2em;
+        height: 2em;
+        padding: 0.6em;
+        border-radius: 100%;
+        object-fit: cover;
+        width: 100%;
+    }
+    icono-box{
+        height: 100%;
+        margin-top: 8px;
+    }
+    h1{
+        font-weight: 700;
+        font-size: 1.3em;
+    }
+    .h1{
+        font-size: 3em;
+        cursor: pointer;
+    }
+    .h1:hover{
+        -webkit-text-fill-color: transparent;
+        background-image: var(--accent-gradient);
+        -webkit-background-clip: text;
+        background-size: 400%;
+        background-position: 0%;
+    }
+</style>

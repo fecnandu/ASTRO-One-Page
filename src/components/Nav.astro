@@ -1,0 +1,75 @@
+<script>
+	import  "../components/java.js"
+</script>
+<nav class="nav">
+    <h2 class="h2">Astro<span class="text-gradient">SHIP</span></h2>
+    <ul>
+        <li>features</li>
+		<li>pricing</li>
+        <li>about</li>
+        <li>blog</li>
+        <li>contact</li>
+    </ul>
+    <section class="botones">
+        <button class="buton">log in</button>
+        <button class="buton">sign up</button>
+    </section>
+</nav>
+<style>
+    .buton{
+		padding: 11px 16px;
+		font-size: larger;
+		color: black;
+		background-color: transparent;
+		border: none;
+		cursor: pointer;
+		border-radius: 5px;
+		transition: 300ms;
+	}
+	.buton:nth-child(2){
+		background-color: black;
+		color: white;
+	}
+	.buton:nth-child(1):hover{
+		background-color: black;
+		color: white;
+	}
+	.buton:nth-child(2):hover{
+		background-color: transparent;
+		color: black;
+	}
+	.nav{
+		display: grid;
+		grid-template-columns: max-content max-content max-content;
+		justify-content: space-between;
+		align-items: center;
+
+	}
+	ul{
+		display: flex;
+		align-items: center;
+	}
+	li{
+		padding: 18px;
+		font-size: 18px;
+		font-weight: 500;
+		color: rgb(97, 94, 94);
+		cursor: pointer;
+		transition: 200ms;
+	}
+	li:hover{
+		background-image: var(--accent-gradient);
+		 -webkit-background-clip: text;
+	    -webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%; 
+	}
+	.h2 , .text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+		font-size: 1.5em;
+	}
+</style>

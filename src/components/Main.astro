@@ -1,0 +1,79 @@
+<script>
+	import  "../components/java.js"
+</script>
+<header>
+    <div class="info">
+        <h1 id="h1">Marketing website done with Astro
+            </h1>
+            <p>
+                Astroship is a starter template for startups, marketing websites & <br> landing pages. Built with Astro.build and TailwindCSS. You can <br> quickly create any website with this starter.
+            </p>
+            <div class="botones-info">
+                <div  class="boton"><i class="ri-download-cloud-fill">  </i>Download for free</div>
+                <div class="boton"><i class="ri-github-fill"></i> GitHub Repo</div>
+            </div>
+    </div>
+    <picture class="picture-image">
+        <img src="/public/astro.webp" alt="">
+    </picture>
+</header>
+<style>
+    header{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		margin-top: 85px;
+	}
+	h1 {
+		font-size: 4.5rem;
+		font-weight: 700;
+		line-height: 1.1;
+		margin: 0;
+		letter-spacing: -.05em;
+		cursor: pointer;
+		transition: 100ms;
+	}
+	h1:hover{
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
+	img{
+		width: 100%;
+		object-fit: cover;
+        pointer-events: none;
+	}
+	
+	.boton{
+		width: auto;
+		background-color: transparent;
+		padding: 10px 0.8em;
+		margin: 10px;
+		border-radius: 5px;
+		border: 2px solid black;
+		margin-left: 0;
+		font-size: 1.1em;
+		transition: all 500ms;
+		cursor: pointer;
+		margin-top: 20px;
+		letter-spacing: 0em;
+	}
+	.boton:nth-child(1):hover{
+       background-color: transparent;
+	   color: black;
+	}
+	.boton:nth-child(2):hover{
+       background-color: black;
+	   color: rgb(255, 255, 255);
+	}
+	.boton:nth-child(1){
+		color: white;
+		background-color: black;
+	}
+	.botones-info{
+		display: flex;
+		align-items: center;
+		position: relative;
+		}
+</style>
