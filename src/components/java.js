@@ -1,38 +1,17 @@
-// const nam = document.querySelector("#ad")
-// let open = document.querySelector("#open")
-// let close = document.querySelector("#close")
-
-
-
-// open.addEventListener("click",()=>{
-//  nam.classList.add("open")
-// })
-// close.addEventListener("click",()=>{
-//     nam.classList.remove("open")
-// })
-
-
-
-
-// const item = 100
-// const jas = 50
-// for (let i=1; i<=10; i++){
-//     for(let j=1;j<=10;j++){
-//         let resultado = i*j
-//         console.log(i + " x " + j +" = " +resultado);
-//     }
-
-
-// }if (item <=10) {
-//     console.log("si lo es");
-// }
-// else if (jas<=10){
-//     console.log("no  lo es");
-// }
-// else{
-//     console.log("no se");
-// }
-
+let nav = document.getElementById('nav');
+let open = document.getElementById("open");
+let close = document.getElementById("close");
+open.addEventListener("click",()=>{
+	nav.classList.add("activity")
+	open.classList.add("act")
+	close.classList.add("closeactive")
+    body.classList.add("body")
+})
+close.addEventListener("click",()=>{
+	nav.classList.remove("activity")
+	open.classList.remove("act")
+	close.classList.remove("closeactive")
+})
 
 let li = document.getElementById("h1")
 	const height = li.clientHeight
@@ -89,4 +68,5 @@ let li = document.getElementById("h1")
 		rotateX(0)
 		rotateY(0)`
    })
+
 

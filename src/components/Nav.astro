@@ -3,19 +3,24 @@
 </script>
 <nav class="nav">
     <h2 class="h2">Astro<span class="text-gradient">SHIP</span></h2>
-    <ul>
+    <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg class="open" height="32px" id="open" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/></svg>
+	<?xml version="1.0" ?><svg class="close" id="close" height="48" viewBox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg"><path d="M38 12.83l-2.83-2.83-11.17 11.17-11.17-11.17-2.83 2.83 11.17 11.17-11.17 11.17 2.83 2.83 11.17-11.17 11.17 11.17 2.83-2.83-11.17-11.17z"/><path d="M0 0h48v48h-48z" fill="none"/></svg>
+    <ul id="nav">
         <li>features</li>
 		<li>pricing</li>
         <li>about</li>
         <li>blog</li>
         <li>contact</li>
+		<section class="botones">
+			<button class="buton">log in</button>
+			<button class="buton">sign up</button>
+		</section>
     </ul>
-    <section class="botones">
-        <button class="buton">log in</button>
-        <button class="buton">sign up</button>
-    </section>
+    
 </nav>
 <style>
+	
+	
     .buton{
 		padding: 11px 16px;
 		font-size: larger;
@@ -38,12 +43,12 @@
 		background-color: transparent;
 		color: black;
 	}
+	.botones{margin-left: 185px;}
 	.nav{
 		display: grid;
-		grid-template-columns: max-content max-content max-content;
+		grid-template-columns: max-content max-content;
 		justify-content: space-between;
 		align-items: center;
-
 	}
 	ul{
 		display: flex;
@@ -56,6 +61,7 @@
 		color: rgb(97, 94, 94);
 		cursor: pointer;
 		transition: 200ms;
+		
 	}
 	li:hover{
 		background-image: var(--accent-gradient);
@@ -72,4 +78,78 @@
 		background-position: 0%;
 		font-size: 1.5em;
 	}
+	.close,
+	.open{
+		display: none;
+		grid-area: iconos;
+		cursor: pointer;
+		transition: 100ms;
+		}
+	@media screen and (max-width: 1350px) {
+		
+	
+	li{
+		padding: 18px;
+		font-size: 20px;
+		font-weight: 500;
+		color: rgb(255, 255, 255);
+		cursor: pointer;
+		transition: 200ms;
+		
+	}
+		.open{
+		display: block;
+	}
+	.closeactive{
+		display: block;
+	}
+	.close{
+		grid-area: iconos;
+		fill: rgb(255, 255, 255);
+		z-index: 100;
+	}
+	.h2{
+		grid-area: logo;
+	}
+	.nav{
+		display: grid;
+		align-items: center;
+		justify-content: space-around;
+		grid-template-columns: max-content max-content;
+		grid-template-areas: "logo iconos";
+		position: relative;
+	}
+	ul{
+			visibility: hidden;
+			opacity: 0;
+			margin-top: -10px;
+			display: none;
+			background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100vh;
+          z-index: 10;
+		  box-shadow: 0 0 0 100vmax rgba(1, 1, 1, 0.772) ;
+		}	
+		.botones{margin-left: 0;}
+		.activity{
+		display: block;
+		visibility: visible;
+		opacity: 1;
+		transition: 1s;
+		display: grid;
+		  grid-template-columns: 1fr;
+		  align-items: center;
+		padding: 0 15px;
+	}
+	.act{
+		display: none;
+		visibility: hidden;
+		opacity: 0;
+		display: block;
+	}
+	}
+	
 </style>

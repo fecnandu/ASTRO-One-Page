@@ -105,4 +105,31 @@
         background-size: 400%;
         background-position: 0%;
     }
+    @media screen and (max-width:1350px) {
+        .grid{
+            grid-template-columns: repeat(2,1fr);
+            padding: 10px 95px;
+            gap: 50px;
+        }
+        header{
+            text-align: center;
+        }
+    }
+    @media screen and (max-width:900px) {
+        .grid{
+            grid-template-columns: 1fr;
+            align-items: center;
+            text-align: center;
+        }
+        @media screen and (max-width:500px) {
+            .grid{
+            padding: 10px 55px;
+            gap: 40px;
+        }
+        .h1{
+        font-size: 2em;
+        cursor: pointer;
+    }
+        }
+    }
 </style>

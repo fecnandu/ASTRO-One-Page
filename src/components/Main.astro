@@ -76,4 +76,57 @@
 		align-items: center;
 		position: relative;
 		}
+		@media screen and (max-width:1350px){
+			header{
+				display: grid;
+				grid-template-columns: 1fr;
+				align-items: center;
+				text-align: center;
+				gap: 45px;
+				justify-content: center;
+			}
+			.botones-info{
+				justify-content: center;
+			}
+			.info{
+				display: flex;
+				flex-direction: column;
+				gap: 20px;
+			}
+			h1 {
+		font-size: 3rem;
+		
+	}
+	@media screen and (max-width:500px) {
+		.boton{
+		width: auto;
+		background-color: transparent;
+		padding: 9px 0.3em;
+		margin: 10px;
+		border-radius: 5px;
+		border: 2px solid black;
+		margin-left: 0;
+		font-size: 1.1em;
+		transition: all 500ms;
+		cursor: pointer;
+		margin-top: 20px;
+		letter-spacing: 0em;
+	} 
+	}
+	@media screen and (max-width:370px) {
+		.boton{
+		width: auto;
+		background-color: transparent;
+		padding: 2px 0.1em;
+		margin: 10px;
+		border-radius: 5px;
+		border: 2px solid black;
+		margin-left: 0;
+		font-size: 0.7em;
+		transition: all 500ms;
+		cursor: pointer;
+		margin-top: 20px;
+		letter-spacing: 0em;
+	}
+	}
 </style>

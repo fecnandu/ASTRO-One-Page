@@ -1,5 +1,5 @@
 ---
-import Layout from '../components/Layout.astro';
+import Layout from '../layouts/Layout.astro';
 import  Header from "../components/header.astro";
 import  Nav from '../components/Nav.astro';
 import Main from '../components/Main.astro';
@@ -9,9 +9,12 @@ import Footer from "../components/foter.astro";
 	<link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
 	<main class="main">
 		<Nav/>
-		<Main/>
+	
+			<Main/>
 		<Header/>
 		<Footer/>
+
+		
 	</main>
 </Layout>
 
@@ -55,4 +58,5 @@ background-image: linear-gradient(179deg, #ffffff 0%, #d3d4d4 250%);
 		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
 			Bitstream Vera Sans Mono, Courier New, monospace;
 	}
+    
 </style>
